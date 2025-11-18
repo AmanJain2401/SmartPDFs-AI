@@ -17,7 +17,7 @@
 
 ## User Interface
 
-![SmartPDFs Screenshot](assets/SmartPDFs_with_llama.jpg)
+![SmartPDFs Screenshot](assets/SmartPDFs_with_llama.JPG)
 
 ---
 
@@ -41,7 +41,7 @@ Also, OpenAi Embeddings can be used (must faster) but again paid.
 
 ## Architecture of the Project:
 
-![SmartPDFs Screenshot](assets/Architecture.jpg)
+![SmartPDFs Screenshot](assets/Architecture.JPG)
 
 ---
 
