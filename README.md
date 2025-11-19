@@ -12,7 +12,8 @@
 - Maintains conversation history for multi-turn interactions.
 - Sidebar displays PDF summary for quick reference.
 - Built with **Streamlit** for a clean, interactive interface.
-
+- Containerized with Docker: The app is packaged with Docker for easy deployment and can be run as a containerized service, simplifying
+  setup and environment configuration.
 ---
 
 ## User Interface
@@ -76,6 +77,15 @@ python -m venv venv
  - OPENAI_API_KEY=your_api_key_here, ...
 
 ---
+## Run with Docker
+1. Build the image:
+   docker build -t smartpdfs .
+2. Run the app:
+   docker run -p 8501:8501 smartpdfs
+3. Open in browser: http://localhost:8501
+
+
+---
 
 ## Usage: 
 ```bash
@@ -86,11 +96,14 @@ streamlit run app.py
 - Ask questions in the main interface.
 - PDF summary is always accessible in the sidebar.
 
+---
 
 ## Project Structure
 SmartPDFs/  
 ├── app.py            # Main Streamlit app  
 ├── Templates.py      # HTML/CSS templates for UI  
 ├── requirements.txt  # Python dependencies  
+├── Dockerfile        # Run with docker
 ├── README.md  
-└── venv/             # Python virtual environment
+└── venv/             # Python virtual environment  
+└── assets/           # Static files (images, CSS, JS, etc.)     
